@@ -1,42 +1,175 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jin young – UX/UI Designer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<body>
-    <header class="hero" data-aos="fade-down">
-        <h1>Jin young</h1>
-        <p>UX/UI Designer</p>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;800&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Pretendard", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(160deg, #f8f9fa, #e3eaf1);
+        color: #222;
+        line-height: 1.6;
+        padding: 0 1.5rem;
+      }
+
+      header {
+        text-align: center;
+        padding: 6rem 0 3rem;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        font-weight: 800;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        color: #555;
+      }
+
+      section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 4rem 0;
+      }
+
+      .about img {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+      }
+
+      .about p {
+        font-size: 1rem;
+        color: #333;
+        text-align: center;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .project-card {
+        background: white;
+        border-radius: 1.5rem;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .project-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .project-card .content {
+        padding: 1rem;
+      }
+
+      .project-card .content h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .project-card .content p {
+        font-size: 0.9rem;
+        color: #555;
+      }
+
+      .contact {
+        text-align: center;
+        padding-bottom: 4rem;
+      }
+
+      .contact a {
+        display: inline-block;
+        margin: 0.3rem 0.7rem;
+        text-decoration: none;
+        font-weight: 600;
+        color: #2b72d6;
+        border-bottom: 1px solid transparent;
+        transition: border 0.2s ease;
+      }
+
+      .contact a:hover {
+        border-color: #2b72d6;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 0.8rem;
+        color: #aaa;
+        padding-bottom: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Jin young</h1>
+      <p>UX/UI Designer Portfolio</p>
     </header>
-    <section class="about" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>I design digital experiences that are intuitive, engaging, and visually appealing.</p>
+
+    <section class="about">
+      <div style="text-align: center">
+        <img src="https://your-image-url.com/profile.jpg" alt="Jin young 프로필" />
+      </div>
+      <p>안녕하세요. UX/UI 디자이너 진영입니다. 사용자 경험을 고려한 인터페이스 디자인과 브랜딩에 관심이 많습니다. 감각적인 시각과 구조적인 사고로 더 나은 디지털 경험을 만들어 갑니다.</p>
     </section>
-    <section class="projects" data-aos="fade-up">
-        <h2>Projects</h2>
+
+    <section>
+      <h2 style="text-align: center; font-size: 1.5rem; margin-bottom: 2rem">Projects</h2>
+      <div class="projects">
         <div class="project-card">
-            <img src="assets/sample-project.jpg" alt="Project Thumbnail">
-            <div class="project-info">
-                <h3>Project Title</h3>
-                <p>Short project description goes here.</p>
-            </div>
+          <img src="https://your-image-url.com/project1.jpg" alt="프로젝트1" />
+          <div class="content">
+            <h3>Project One</h3>
+            <p>모바일 앱 UX 리디자인. 사용 흐름 개선 및 비주얼 리프레시 중심.</p>
+          </div>
         </div>
+        <div class="project-card">
+          <img src="https://your-image-url.com/project2.jpg" alt="프로젝트2" />
+          <div class="content">
+            <h3>Project Two</h3>
+            <p>웹 서비스 브랜드 리디자인. 디자인 시스템 구축 및 아이콘 리디자인.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://your-image-url.com/project3.jpg" alt="프로젝트3" />
+          <div class="content">
+            <h3>Project Three</h3>
+            <p>커머스 플랫폼 UI/UX 컨설팅 및 시각 디자인 개선 프로젝트.</p>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="contact" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
+
+    <section class="contact">
+      <h2 style="margin-bottom: 1rem">Contact</h2>
+      <a href="mailto:jinyoung@email.com">Email</a>
+      <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+      <a href="https://www.notion.so/your-notion-link" target="_blank">Notion</a>
     </section>
-    <footer>
-        <p>© 2025 Jin young. All rights reserved.</p>
-    </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-</body>
+
+    <footer>&copy; 2025 Jin young Portfolio</footer>
+  </body>
 </html>
